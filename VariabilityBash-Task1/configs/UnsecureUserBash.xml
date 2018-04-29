@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <feature automatic="selected" name="VariabilityBash"/>
+    <feature automatic="selected" name="Input"/>
+    <feature automatic="selected" name="CommandParser"/>
+    <feature automatic="selected" name="cd"/>
+    <feature automatic="selected" name="ls"/>
+    <feature automatic="selected" manual="selected" name="help"/>
+    <feature automatic="selected" name="Name"/>
+    <feature manual="selected" name="Description"/>
+    <feature manual="selected" name="UsageExample"/>
+    <feature manual="selected" name="cat"/>
+    <feature automatic="selected" name="Output"/>
+    <feature automatic="selected" name="TextColor"/>
+    <feature automatic="unselected" name="Red"/>
+    <feature automatic="unselected" name="Green"/>
+    <feature manual="selected" name="Blue"/>
+    <feature automatic="unselected" name="White"/>
+    <feature automatic="selected" name="TextFont"/>
+    <feature manual="selected" name="Times"/>
+    <feature automatic="unselected" name="Arial"/>
+    <feature automatic="unselected" name="OpenSans"/>
+</configuration>

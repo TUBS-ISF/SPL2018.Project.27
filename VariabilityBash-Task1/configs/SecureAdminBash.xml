@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <feature automatic="selected" name="VariabilityBash"/>
+    <feature automatic="selected" manual="selected" name="Authentication"/>
+    <feature manual="selected" name="Username"/>
+    <feature manual="selected" name="Password"/>
+    <feature automatic="selected" name="Input"/>
+    <feature automatic="selected" name="CommandParser"/>
+    <feature automatic="selected" name="cd"/>
+    <feature automatic="selected" name="ls"/>
+    <feature manual="selected" name="mkdir"/>
+    <feature manual="selected" name="mkfile"/>
+    <feature automatic="selected" manual="selected" name="help"/>
+    <feature automatic="selected" name="Name"/>
+    <feature manual="selected" name="UsageExample"/>
+    <feature automatic="selected" name="rm"/>
+    <feature manual="selected" name="cat"/>
+    <feature automatic="selected" name="Output"/>
+    <feature automatic="selected" name="TextColor"/>
+    <feature automatic="unselected" name="Red"/>
+    <feature manual="selected" name="Green"/>
+    <feature automatic="unselected" name="Blue"/>
+    <feature automatic="unselected" name="White"/>
+    <feature automatic="selected" name="TextFont"/>
+    <feature manual="selected" name="Times"/>
+    <feature automatic="unselected" name="Arial"/>
+    <feature automatic="unselected" name="OpenSans"/>
+    <feature manual="selected" name="Logger"/>
+</configuration>
