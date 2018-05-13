@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+    <properties/>
+    <struct>
+        <and abstract="true" mandatory="true" name="VariabilityBash">
+            <description>
+This feature model represents a product line for a command line tool.
+</description>
+            <or abstract="true" name="Authentication">
+                <description>
+Before the VariabilityBash can be used the user needs to authenticate itself.
+</description>
+                <feature abstract="true" name="Username">
+                    <description>
+The user needs to provide an username.
+</description>
+                </feature>
+                <feature abstract="true" name="Password">
+                    <description>
+The user needs to provide a password to authenticate itself.
+</description>
+                </feature>
+            </or>
+            <and mandatory="true" name="Input">
+                <description>
+Represents the interface for the user to input textual information into the VariabilityBash.
+</description>
+                <and mandatory="true" name="CommandParser">
+                    <description>
+Is used to identify a command from the input given into the VariabilityBash.
+</description>
+                    <feature abstract="true" mandatory="true" name="cd">
+                        <description>
+Is a command. Allows the user to change the current working directory.
+</description>
+                    </feature>
+                    <feature abstract="true" mandatory="true" name="ls">
+                        <description>
+Is a command. List every file and directory of the current working directory.
+</description>
+                    </feature>
+                    <feature abstract="true" name="mkdir">
+                        <description>
+Is a command. Creates a new directory.
+</description>
+                    </feature>
+                    <feature abstract="true" name="mkfile">
+                        <description>
+Is a command. Creates a new file.
+</description>
+                    </feature>
+                    <and name="help">
+                        <description>
+Is a coomand. Lists all available commands.
+</description>
+                        <feature mandatory="true" name="Name">
+                            <description>
+When 'help' is used at least the name for every command shloud be displayed. Therefore, name is mandatory.
+</description>
+                        </feature>
+                        <feature name="Description">
+                            <description>
+Provide sthe ability to create descriptions for command and to show them when excecuting 'help'
+</description>
+                        </feature>
+                        <feature name="UsageExample">
+                            <description>
+Allows a command to provide a description how to use the particular command.
+</description>
+                        </feature>
+                    </and>
+                    <feature abstract="true" name="rm">
+                        <description>
+Is a command. Can remove directories and files.
+</description>
+                    </feature>
+                    <feature abstract="true" name="cat">
+                        <description>
+Is a command. Shows the data of an given file.
+</description>
+                    </feature>
+                </and>
+            </and>
+            <and mandatory="true" name="Output">
+                <description>
+Manages the textual output of the VariabilityBash
+</description>
+                <alt abstract="true" mandatory="true" name="TextColor">
+                    <description>
+A text color is needed. Therefore, the feature is mandatory.
+</description>
+                    <feature name="Red">
+                        <description>
+The text color is red.
+</description>
+                    </feature>
+                    <feature name="Green">
+                        <description>
+The text color is green.
+</description>
+                    </feature>
+                    <feature name="Blue">
+                        <description>
+The text color is blue.
+</description>
+                    </feature>
+                    <feature name="White">
+                        <description>
+The text color is white.
+</description>
+                    </feature>
+                </alt>
+                <alt abstract="true" mandatory="true" name="BackgroundColor">
+                    <description>
+Background color is also changable.
+</description>
+                    <feature name="BackgroundBlack">
+                        <description>
+Sets the background color to black.
+</description>
+                    </feature>
+                    <feature name="BackgroundWhite">
+                        <description>
+Sets the background color to white.
+</description>
+                    </feature>
+                </alt>
+            </and>
+            <feature abstract="true" name="Logger">
+                <description>
+Logs every command excecuted with the VariabilityBash.
+</description>
+            </feature>
+        </and>
+    </struct>
+    <constraints>
+        <rule>
+            <description>
+If we provide the ability to create files or directories we also provide a way to remove them. It also applies the other way around.
+</description>
+            <eq>
+                <var>rm</var>
+                <disj>
+                    <var>mkdir</var>
+                    <var>mkfile</var>
+                </disj>
+            </eq>
+        </rule>
+    </constraints>
+    <calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+    <comments/>
+    <featureOrder userDefined="false"/>
+</featureModel>
