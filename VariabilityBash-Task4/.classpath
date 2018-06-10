@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="libExt/jansi-1.17.jar"/>
+	<classpathentry kind="lib" path="lib/BackgroundWhite.jar"/>
+	<classpathentry kind="lib" path="lib/CommandParser.jar"/>
+	<classpathentry kind="lib" path="lib/Description.jar"/>
+	<classpathentry kind="lib" path="lib/Input.jar"/>
+	<classpathentry kind="lib" path="lib/Name.jar"/>
+	<classpathentry kind="lib" path="lib/Output.jar"/>
+	<classpathentry kind="lib" path="lib/UsageExample.jar"/>
+	<classpathentry kind="lib" path="lib/White.jar"/>
+	<classpathentry kind="lib" path="lib/cd.jar"/>
+	<classpathentry kind="lib" path="lib/help.jar"/>
+	<classpathentry kind="lib" path="lib/ls.jar"/>
+	<classpathentry kind="lib" path="lib/mkdir.jar"/>
+	<classpathentry kind="lib" path="lib/mkfile.jar"/>
+	<classpathentry kind="lib" path="lib/rm.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

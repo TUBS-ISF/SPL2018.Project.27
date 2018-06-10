@@ -1,0 +1,5 @@
+<plugin>
+	<interface id="bash.interfaces.IColor">
+		<class>Green</class>
+	</interface>
+</plugin>

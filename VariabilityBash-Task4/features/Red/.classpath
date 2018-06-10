@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="lib" path="/home/joshuasprez/.sdkman/candidates/java/8.0.163-zulu/jre/lib/resources.jar"/>
+	<classpathentry kind="lib" path="/home/joshuasprez/.sdkman/candidates/java/8.0.163-zulu/jre/lib/rt.jar"/>
+	<classpathentry kind="lib" path="/home/joshuasprez/.sdkman/candidates/java/8.0.163-zulu/jre/lib/jsse.jar"/>
+	<classpathentry kind="lib" path="/home/joshuasprez/.sdkman/candidates/java/8.0.163-zulu/jre/lib/jce.jar"/>
+	<classpathentry kind="lib" path="/home/joshuasprez/.sdkman/candidates/java/8.0.163-zulu/jre/lib/charsets.jar"/>
+	<classpathentry kind="lib" path="/home/joshuasprez/.sdkman/candidates/java/8.0.163-zulu/jre/lib/ext/cldrdata.jar"/>
+	<classpathentry kind="lib" path="/home/joshuasprez/.sdkman/candidates/java/8.0.163-zulu/jre/lib/ext/sunec.jar"/>
+	<classpathentry kind="lib" path="/home/joshuasprez/.sdkman/candidates/java/8.0.163-zulu/jre/lib/ext/jaccess.jar"/>
+	<classpathentry kind="lib" path="/home/joshuasprez/.sdkman/candidates/java/8.0.163-zulu/jre/lib/ext/sunjce_provider.jar"/>
+	<classpathentry kind="lib" path="/home/joshuasprez/.sdkman/candidates/java/8.0.163-zulu/jre/lib/ext/zipfs.jar"/>
+	<classpathentry kind="lib" path="/home/joshuasprez/.sdkman/candidates/java/8.0.163-zulu/jre/lib/ext/dnsns.jar"/>
+	<classpathentry kind="lib" path="/home/joshuasprez/.sdkman/candidates/java/8.0.163-zulu/jre/lib/ext/nashorn.jar"/>
+	<classpathentry kind="lib" path="/home/joshuasprez/.sdkman/candidates/java/8.0.163-zulu/jre/lib/ext/sunpkcs11.jar"/>
+	<classpathentry kind="lib" path="/home/joshuasprez/.sdkman/candidates/java/8.0.163-zulu/jre/lib/ext/localedata.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

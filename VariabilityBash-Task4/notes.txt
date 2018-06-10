@@ -1,0 +1,8 @@
+The integration of FeatureIDE's Framework is quite horrible. The Plug-In loades works fine. But it is almost impossible to test the implementation because one of the following cases happens:
+
+1) Change current configuration -> No plugin created for a newly selected feature.
+2) The .jar files are not build only somtimes or when restarting FeatureIDE(also not every time).
+3) I could not build the feature plugins on demand. Only worked the first time. After that no .class files were generated. That is quite annoying and prevents the user from testing the code.
+
+Therefore only the Colors are implemented as Framework. Could not test(see 1-3 above) them but should work.
+
