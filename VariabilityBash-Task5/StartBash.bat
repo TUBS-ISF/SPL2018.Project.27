@@ -1,0 +1,1 @@
+java -cp ".;lib/jansi-1.17.jar;bin/" Bash
