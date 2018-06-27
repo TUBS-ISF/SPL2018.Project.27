@@ -8,21 +8,35 @@ public class Bash {
 
 	public static final String EXIT_CODE = "abort_mission";
 
-	private InputManager iManager = null;
+	public InputManager iManager = null;
 	public OutputManager oManager = null;
 	private CommandParser parser;
+	public static Bash instance;
 
 	public String currentPath = System.getProperty("user.dir");
 
+	public boolean shutdown = false;
+
 	public Bash() {
-		iManager = new InputManager(this);
-		oManager = new OutputManager();
-		parser = new CommandParser(this);
-		oManager.print("Welcome to the VariabilityBash!");
-		oManager.nextLine();
-		while (processNextCommand()) {
+		if (instance == null) {
+			instance = this;
+			iManager = new InputManager(this);
+			oManager = new OutputManager();
+			parser = new CommandParser(this);
+			oManager.print("Welcome to the VariabilityBash!");
+			oManager.nextLine();
+			init();
+			if (!shutdown) {
+				while (processNextCommand()) {
+					if(shutdown) {
+						break;
+					}
+				}
+			}
+			oManager.resetOutput();
+		} else {
+
 		}
-		oManager.resetOutput();
 	}
 
 	public static void main(String[] args) {
@@ -48,5 +62,15 @@ public class Bash {
 		}
 		return true;
 	}
-	
+
+	protected void init() {
+
+	}
+
+	public static void print(String line) {
+		if (instance != null) {
+			instance.oManager.print(line);
+		}
+	}
+
 }

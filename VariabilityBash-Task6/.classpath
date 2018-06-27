@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="PasswordOnly.aj|BackgroundWhite.aj|Verify.aj|Blue.aj|Red.aj|White.aj|Username.aj" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.ajdt.core.ASPECTJRT_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/jansi-1.17.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
